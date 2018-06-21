@@ -41,5 +41,37 @@ See my video in [youtube](https://youtu.be/M6Xf87ZN0aw)
 1. When there is a playlist with a private video in it, then downloading the playlist will download all videos to that private video in the playlist.<br>
 2. When the name of a single video or playlist has special markers, then the folder will not open automatically, but the video will not be downloaded. <br><br>
 
+* Example
+I copied the link: https://www.youtube.com/watch?v=Mp9Jg7NX2Vo&list=PL0lNJEnwfVVObxfHDVMTZProttL1EHuGZ&ab_channel=DesignCourse <br>
+Then I ran the file (double-clicking the file) <br>
+The output: <br>
+```
+Please wait until the program will finished
+Then you see the result, or Error showed up if this happened...
+
+Runs the following command in Powershell:
+
+   youtube-dl -o 'C:\Users\Hadriel\Desktop/Youtube Downloads/%(playlist)s/%(playlist_index)s - %(title)s.%(ext)s' https://www.youtube.com/watch?v=Mp9Jg7NX2Vo"&"list=PL0lNJEnwfVVObxfHDVMTZProttL1EHuGZ"&"ab_channel=DesignCourse
+
+...
+
+Playlist: THIS WEEK
+----------------------------------------------------------------------------------------------------
+
+[download] Downloading video 1 of 2 |  (24.26MiB) 1 - THIS WEEK - Electron Desktop Apps, and what is SmashingMag thinking.mp4
+[download] Downloading video 2 of 2 |  (30.77MiB) 2 - THIS WEEK - Angular_Electron. And why you need to start your own biz, ASAP!.mp4
+
+----------------------------------------------------------------------------------------------------
+
+Placed in folder: C:\Users\Hadriel\Desktop\Youtube Downloads\THIS WEEK
+
+Opens a folder that contains the files
+
+
+
+Press any key to continue . . .
+```
+<br>
+<br>
 Thanks,  <br>
 Enjoy...
