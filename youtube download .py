@@ -64,23 +64,28 @@ def printInfo(data_list):
     if N == 0: N = len(matches_size)
     if N == 0: N = len(matches_name)
     if N == 0: N = len(matches_play)
-        
+
+    print(res)
     for i in range(len(matches_size)):
+        res = ''
         if(i < len(matches_down)): res += matches_down[i] + ' | '
         if(i < len(matches_size)): res += ' ('+ matches_size[i]+') '
         if(i < len(matches_name)):
             matches_name[i] = matches_name[i].replace('—', '-')
             res += matches_name[i][idx+1:]
-        res += '\n'
+        #res += '\n'
+        print(res)
 
+    res = ''
+    print()
     if(len(path) == 0 and len(matches_name) > 0) : path = matches_name[0][:matches_name[0].rfind('\\')+1]
-    res += ('-')*100 + '\nPlaced in folder: ' + path + '\n'
-
+    res += ('-')*100 + '\n\nPlaced in folder: ' + path # + '\n'
+    print(res)
+    
     ## print to user the information
-    print('Download Summary:\n\n\t', res)
     if(len(path)>0):
         path = path.replace('\\x97', '—')
-        print('Opens a folder that contains the files'); os.startfile(path)
+        print('\nOpens a folder that contains the files\n\n\n'); os.startfile(path)
 
 
 
