@@ -20,15 +20,18 @@ note: The file is downloaded where the script is located <br> <br>
 * Operating requirements: <br><br>
 
 Installing the youtube-dl you need to unzip the file youtube-dl-master.zip and enter into the folder and then install the setup.py by the command in cmd there: <br>
+
 ```python
 python setup.py install
 ```
 <br>
-Installing the following packages using the pip<br>
+Installing the following packages using the pip <br>
+
 ```python
 pip install pyperclip
 pip install pprint
 ```
+
 <br>
 * Install Windows PowerShell, and place his path in the script
 
